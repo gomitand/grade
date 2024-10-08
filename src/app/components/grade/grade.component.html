@@ -1,0 +1,27 @@
+<!--titulo grande-->
+<h1> Grade Sunshine</h1>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Grade</th>
+      <th>Spanish Grade</th>
+      <th>IGroup</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let grade of grades">
+      <td>{{ grade.id}}</td>
+      <td><input [(ngModel)]="grade.grade" class="grade-input"></td>
+      <td><input [(ngModel)]="grade.spanishGrade" class="grade-input"></td>
+      <td><input [(ngModel)]="grade.group" class="grade-input"></td>
+      <td>
+        <button (click)="editGrade(grade.id)"class="action-button">✏️</button>
+        <button (click)="deleteGrade(grade.id)"class="action-button">🗑️</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<button (click)="addGrade()" class="add-button">+</button>

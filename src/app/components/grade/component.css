@@ -1,0 +1,53 @@
+.title {
+  font-size: 2em;
+  margin-bottom: 1rem;
+  text-align: center;
+  /* Add other styles for the title */
+}
+
+.grade-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  /* Add other styles for the table */
+}
+
+.grade-table th,
+.grade-table td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  /* Add other styles for table cells */
+}
+
+.grade-table th {
+  text-align: left;
+  background-color: #f2f2f2;
+  /* Add other styles for table headers */
+}
+
+.grade-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 5px;
+  /* Add other styles for input fields */
+}
+
+.action-button {
+  border: none;
+  padding: 5px 10px;
+  background-color: #4CAF50; /* Adjust color as needed */
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 5px; /* Add other styles for action buttons */
+}
+
+.add-button {
+  border: none;
+  padding: 10px;
+  background-color: #28a745; /* Adjust color as needed */
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  /* Add other styles for the add button */
+}
