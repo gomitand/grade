@@ -1,27 +1,49 @@
-<!--titulo grande-->
-<h1> Grade Sunshine</h1>
-<table>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Grade</th>
-      <th>Spanish Grade</th>
-      <th>IGroup</th>
-      <th>Acciones</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let grade of grades">
-      <td>{{ grade.id}}</td>
-      <td><input [(ngModel)]="grade.grade" class="grade-input"></td>
-      <td><input [(ngModel)]="grade.spanishGrade" class="grade-input"></td>
-      <td><input [(ngModel)]="grade.group" class="grade-input"></td>
-      <td>
-        <button (click)="editGrade(grade.id)"class="action-button">✏️</button>
-        <button (click)="deleteGrade(grade.id)"class="action-button">🗑️</button>
-      </td>
-    </tr>
-  </tbody>
+<div class="container-fluid bg-success text-white p-3 align-items-left">
+  <div class="row align-left">
+      <div class="col-auto">
+          <img src="assets/img/preloader.full.png" alt="Logo" class="logo-img"  />
+      </div>
+  </div>
+</div>
+
+<div class="container bg-white p-4 mt-2">
+  <h1 class="title">Grade Sunshine</h1>
+</div>
+<br>
+<button (click)="addGrade()" class="btn btn-success">+</button>
+
+<table class="table table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th>ID</th>
+            <th>Grade</th>
+            <th>Spanish Grade</th>
+            <th>Group</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let grade of grades">
+            <td>{{ grade.id }}</td> <!-- Se agrega ID -->
+            <td><input [(ngModel)]="grade.grade" class="form-control grade-input"></td>
+            <td><input [(ngModel)]="grade.spanishGrade" class="form-control grade-input"></td>
+            <td>
+                <select [(ngModel)]="grade.group" class="form-control grade-input" >
+                    <option value="LARGOS">LARGOS</option>
+                    <option value="CORTOS">CORTOS</option>
+                    <option value="30S">30S</option>
+                    <option value="DERROGACIÓN">DERROGACIÓN</option>
+                    <!-- Otras opciones según sea necesario -->
+                </select>
+            </td>
+            <td>
+                <button (click)="editGrade(grade.id)" class="btn btn-warning">✏️</button>
+                <button (click)="deleteGrade(grade.id)" class="btn btn-danger">🗑️</button>
+            </td>
+        </tr>
+    </tbody>
 </table>
 
-<button (click)="addGrade()" class="add-button">+</button>
+
+
+

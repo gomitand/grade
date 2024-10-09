@@ -1,53 +1,94 @@
+/* Contenedor del logo */
+.container-fluid {
+  background-color: #008C8C;                                              /* Color fondo verde */
+  padding: 20px;                                                             /* Espaciado interno */
+}
+
+/* Logo de imagen */
+.logo-img {
+  max-width: 500px;                                                         /* Ajusta el tamaño del logo */
+  display: block;                                                            /* Asegura que se comporte como un bloque */
+  margin: 0 left;                                                            /* Centra horizontalmente */
+}
+
+/* Contenedor de título */
+.container.bg-white {
+  background-color: #FFFFFF;                                                /* Color de fondo blanco */
+  padding: 25px;                                                              /* Espaciado interno */
+  margin-top: 1px;                                                            /* Margen superior para espacio entre contenedores */
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.397);                                                        /* Bordes redondeados opcional */
+}
+
+/* Contenedor de la tabla */
+
+
+/* Centrar el título */
 .title {
-  font-size: 2em;
-  margin-bottom: 1rem;
-  text-align: center;
-  /* Add other styles for the title */
+  text-align: left;                                                               /* Centra el texto del título */
+  color: #33333385;                                                                /* Color del texto */
+  margin-bottom: 20px;                                                                 /* Espacio inferior */
 }
 
-.grade-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 0 auto;
-  /* Add other styles for the table */
+/* Estilos de la tabla */
+.table {
+  width: 100%;                                                                          /* Ocupa el ancho completo del contenedor */
+  margin-top: 100px;
+  border: 1px solid #ddd;                                                               /* Margen superior para espaciar de otros elementos */
+}
+.table th {
+  background-color: #e9eef3;                                                /* Color de fondo de los encabezados */
+  text-align: center;                                                          /* Centrar encabezados */
 }
 
-.grade-table th,
-.grade-table td {
-  padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
-  /* Add other styles for table cells */
+.table th, .table td {
+  vertical-align: middle; /* Alineación vertical de las celdas */
+  padding: 1px;
+   /* Espaciado en las celdas */
 }
 
-.grade-table th {
-  text-align: left;
-  background-color: #f2f2f2;
-  /* Add other styles for table headers */
+.table td {
+  position: relative; /* Para poder posicionar el select y los botones fácilmente */
+}
+.form-control {
+  border: 1px solid #ccc; /* Bordes del select */
+  border-radius: 4px; /* Bordes redondeados */
+}
+.btn {
+  min-width: 33px; /* Ancho mínimo para los botones */
+  margin: 0 2px; /* Espaciado entre botones */
+}
+
+tbody tr:hover {
+  background-color: #e9ecef; /* Color de fondo al pasar el mouse */
+}
+
+h1 {
+  font-weight: 300; /* Peso de la fuente más ligero para el título */
+}
+
+.container {
+  margin-top: 30px; /* Espaciado superior para el contenedor */
+}
+
+
+
+
+
+
+/* Centrando los botones */
+.btn {
+  display: block;                                                                  /* Hacer los botones bloque para centrar */
+  margin: 10px auto;                                                                 /* Centrar y agregar espaciado superior e inferior */
 }
 
 .grade-input {
-  width: 100%;
-  border: 1px solid #ccc;
-  padding: 5px;
-  /* Add other styles for input fields */
+  width: 100%;                                                                             /* Para que ocupe el ancho total del contenedor */
 }
 
-.action-button {
-  border: none;
-  padding: 5px 10px;
-  background-color: #4CAF50; /* Adjust color as needed */
-  color: white;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-right: 5px; /* Add other styles for action buttons */
-}
-
+/* Botón de acción */
 .add-button {
-  border: none;
-  padding: 10px;
-  background-color: #28a745; /* Adjust color as needed */
-  color: white;
-  cursor: pointer;
-  border-radius: 4px;
-  /* Add other styles for the add button */
+  margin-top: 20px;
+                                                                /* Espacio superior adicional para el botón de añadir */
 }
+

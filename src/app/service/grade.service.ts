@@ -22,7 +22,7 @@ export class GradeService {
   }
   aditGrade(id: number, updatedGrade: Grade): void{
     const index = this.grades.findIndex(grade => grade.id === id);
-  if (index !== -1 ){
+  if (index !== 1 ){
     this.grades[index] = updatedGrade;
   }
 }
